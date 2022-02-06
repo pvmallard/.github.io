@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 4</title>
+
+    <style>
+      th{
+        height: 100px;
+        width: 100px;
+        font-size: 30px;
+      }
+
+      a{
+        text-decoration: none;
+      }
+
+      .boxed{
+        border: 5px solid #669;
+        padding-left: 10px;
+      }
+
+      .tabbed{
+        padding-left: 10px;
+      }
+
+      .dark{
+        background-color:#669;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="boxed">
+      <h2>Table of Contents</h2>
+      <p class="tabbed"><a href="#two">Challenge 2: Build a Chessboard</a></p>
+      <p class="tabbed"><a href="#three">Challenge 3: Create a Form</a></p>
+      <p class="tabbed"><a href="#four">Challenge 4: A Google Search Page</a></p>
+      <p class="tabbed"><a href="#five">Challenge 5: Accessibility Concern</a></p>
+    </div>
+
+    <br>
+    <div> <!-- Challenge 2 -->
+      <h2 class="tabbed"  id="two">Challenge 2: Build a Chessboard<br></h2>
+      <table style="border:5px solid #669">
+        <caption>Checkerboard Demonstrating an Stalemate</caption>
+        <tr>
+          <th id="a8"></th>
+          <th id="b8" class="dark"></th>
+          <th id="c8"></th>
+          <th id="d8" class="dark"></th>
+          <th id="e8"></th>
+          <th id="f8-black-bishop" class="dark"><p>&#9821;<p></th>
+          <th id="g8"></th>
+          <th id="h8" class="dark"></th>
+        </tr>
+        <tr>
+          <th id="a7" class="dark"></th>
+          <th id="b7"></th>
+          <th id="c7" class="dark"></th>
+          <th id="d7"></th>
+          <th id="e7-black-pawn" class="dark"><p>&#9823;<p></th>
+          <th id="f7"></th>
+          <th id="g7-black-pawn" class="dark"><p>&#9823;<p></th>
+          <th id="h7-black-king"><p>&#9818;<p></th>
+        </tr>
+        <tr>
+          <th id="a6"></th>
+          <th id="b6" class="dark"></th>
+          <th id="c6"></th>
+          <th id="d6" class="dark"></th>
+          <th id="e6-white-pawn"><p>&#9817;<p></th>
+          <th id="f6" class="dark"></th>
+          <th id="g6-black-pawn"><p>&#9823;<p></th>
+          <th id="h6" class="dark"></th>
+        </tr>
+        <tr>
+          <th id="a5-black-pawn" class="dark"><p>&#9823;<p></th>
+          <th id="b5"></th>
+          <th id="c5" class="dark"></th>
+          <th id="d5"></th>
+          <th id="e5" class="dark"></th>
+          <th id="f5"></th>
+          <th id="g5-white-pawn" class="dark"><p>&#9817;<p></th>
+          <th id="h5-black-pawn"><p>&#9823;<p></th>
+        </tr>
+        <tr>
+          <th id="a4-white-pawn"><p>&#9817;<p></th>
+          <th id="b4-black-pawn" class="dark"><p>&#9823;<p></th>
+          <th id="c4"></th>
+          <th id="d4" class="dark"></th>
+          <th id="e4"></th>
+          <th id="f4" class="dark"></th>
+          <th id="g4"></th>
+          <th id="h4-black-pawn" class="dark"><p>&#9817;<p></th>
+        </tr>
+        <tr>
+          <th id="a3" class="dark"></th>
+          <th id="b3-white-pawn"><p>&#9817;<p></th>
+          <th id="c3" class="dark"></th>
+          <th id="d3-black-pawn"><p>&#9823;<p></th>
+          <th id="e3" class="dark"></th>
+          <th id="f3"></th>
+          <th id="g3" class="dark"></th>
+          <th id="h3"></th>
+        </tr>
+        <tr>
+          <th id="a2"></th>
+          <th id="b2-white-pawn" class="dark"><p>&#9817;<p></th>
+          <th id="c2"></th>
+          <th id="d2-white-pawn" class="dark"><p>&#9817;<p></th>
+          <th id="e2"></th>
+          <th id="f2" class="dark"></th>
+          <th id="g2"></th>
+          <th id="h2" class="dark"></th>
+        </tr>
+        <tr>
+          <th id="a1" class="dark"></th>
+          <th id="b1-white-king"><p>&#9812;<p></th>
+          <th id="c1-white-bishop" class="dark"><p>&#9815;<p></th>
+          <th id="d1"></th>
+          <th id="e1" class="dark"></th>
+          <th id="f1"></th>
+          <th id="g1" class="dark"></th>
+          <th id="h1"></th>
+        </tr>
+      </table>
+    </div>
+
+    <div>
+      <h1 class="tabbed" id="three">Challenge 3: Create a Form<br></h1>
+      <p>Let's find out what kind of cookie you are!</p>
+      <p class="tabbed"><em>Hopefullly you are ready to pursue your true calling as a cookie</em></p>
+      <form>
+        <p>What, prey tell, are your ingredients? (You get sugar already since you so sweet)</p>
+        <input type="checkbox" id="co1" name="co1" value="Lemon">
+        <label for="co1"> Lemon Zest</label><br>
+        <input type="checkbox" id="co2" name="co2" value="Cinnamon">
+        <label for="co2"> Cinnamon</label><br>
+        <input type="checkbox" id="co3" name="co3" value="Vanilla">
+        <label for="co3"> Vanilla Bean</label><br>
+        <input type="checkbox" id="co4" name="co4" value="Chocolate">
+        <label for="co4"> Chocolate Chip</label><br>
+        <input type="checkbox" id="co5" name="co5" value="Caramel">
+        <label for="co5"> Caramel</label><br>
+        <input type="checkbox" id="co6" name="co6" value="Salt">
+        <label for="co6"> Sea Salt</label><br>
+        <input type="checkbox" id="co7" name="co7" value="Raisins">
+        <label for="co7"> Raisins</label><br>
+        <input type="checkbox" id="co8" name="co8" value="Ice Cream">
+        <label for="co8"> Ice Cream</label><br>
+        <input type="checkbox" id="co9" name="co9" value="Ginger">
+        <label for="co9"> Ginger</label><br>
+        <input type="checkbox" id="co10" name="co10" value="Fruity">
+        <label for="co10"> Sprinkles</label><br>
+        <input type="checkbox" id="co11" name="co11" value="Basics">
+        <label for="co11"> Flour, Butter, Baking Soda, all the basics</label>
+
+        <p>Now what's your sytle?</p>
+        <input type="radio" id="pin" name="fav_language" value="pin">
+        <label for="pin">Pinwheel Cookie</label><br>
+        <input type="radio" id="crinkle" name="fav_language" value="crinkle">
+        <label for="crinkle">Crinkle Cookie</label><br>
+        <input type="radio" id="sandwich" name="fav_language" value="sandwich">
+        <label for="sandwich">Sandwich Cookie</label><br>
+        <input type="radio" id="bar" name="fav_language" value="bar">
+        <label for="bar">Cookie Bar</label><br>
+        <input type="radio" id="skill" name="fav_language" value="skill">
+        <label for="skill">Skillet Cookie</label><br>
+        <input type="radio" id="trad" name="fav_language" value="trad">
+        <label for="trad">Traditioinal Cookie</label>
+
+        <p>Put it together and what have you got?</p>
+        <label for="your-cookie">What kind of cookie are you?</label>
+        <input type="text" id="your-cookie" name="your-cookie"><br><br>
+        <label for="fav-cookie">And what's your favorite kind of cookie?</label>
+        <input type="text" id="fav-cookie" name="fav-cookie"><br><br>
+        <input type="submit" value="Submit">
+        <p>Thank you for your time ;}<br></p>
+      </form>
+    </div>
+
+    <h2 class="tabbed" id="four">Challenge 4: A Google Search Page<br></h2>
+    <div style="font-family:Arial">
+      <p style="font-size:13px">About 4,250,000,000 results (0.81 seconds)</p>
+      <ul>
+        <li>Chocolate chip cookies. What is the most popular type of cookie? ...</li>
+        <li>Peanut butter cookies. ...</li>
+        <li>Oatmeal raisin cookies. ...</li>
+        <li>Shortbread cookies. ...</li>
+        <li>Gingerbread cookies. ...</li>
+        <li>Sugar cookies. ...</li>
+        <li>Black and white cookies. ...</li>
+        <li>Butter cookies.</li>
+      </ul>
+      <p style="font-size:13px"><a href="https://www.cheryls.com/blog/cookie-types/">More items...</a></p>
+      <p style="font-size:13px">https://www.cheryls.com > Home > Latest Stories</p>
+      <h3 style="font-weight:normal"><a href="https://www.cheryls.com/blog/cookie-types/">The 50 Most Popular Cookie Types</a></h3><hr><br>
+      <h3>People also ask</h3><hr>
+      <p>What are 10 types of cookies?</p><hr>
+      <p>What are the 6 types of cookies?</p><hr>
+      <p>What are the top 10 most popular cookies?</p><hr>
+      <p>What are the 8 types of cookies?</p><hr><br>
+      <p style="font-size:13px">https://www.allrecipes.com > Recipes > Desserts > Cookies</p>
+      <h3 style="font-weight:normal"><a href="https://www.allrecipes.com/gallery/most-popular-types-of-cookies/">28 Most Popular Types of Cookies | Allrecipes</a></h3>
+      <p style="font-size:13px">1 · Snickerdoodles. Several of Mrs. Sigg's Snickerdoodles ; 2 · Chocolate Chip Cookies. colorful plate of Best Chocolate Chip Cookies ; 3 · Oatmeal Raisin Cookies.</p><br>
+      <h3 style="font-weight:normal">Recipes</h3>
+      <table>
+        <thead>
+          <tr>
+            <th style="border: 1px solid black; border-radius: 10px; height: 200px; width: 150px;"></th>
+            <th style="border: 1px solid black; border-radius: 10px; height: 200px; width: 150px;"></th>
+            <th style="border: 1px solid black; border-radius: 10px; height: 200px; width: 150px;"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="width: 150px;"><hr></td>
+            <td style="border: 1px solid black; border-radius: 10px; width: 150px;"></td>
+            <td style="width: 150px;"><hr></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h2 class="tabbed" id="five">Challenge 5: Accessibility Concern<br></h2>
+      <p class="tabbed">As I was doing some research on what I should include to make my page more accessible, I did my best to apply what I could to each section to follow said advice. I stated by placing a language marker after the html tab to list what language the page is in.
+        From there I got to work tyring to make my Checkerboard more accessible by first adding a caption at the top of the table describing it as a stalemate. In addition, I gave each box an id with the number and letter placement similar to an actual checkerboard. On the same ids, if the box had a chesspiece I added it to the description.
+        I did something similar to the ids for the chessboard on the form. I added some id attributes to the options, although they could be more descriptive some do demonstrate what the questions are asking. Please ignore my Challenge 4 in terms of accessibility for now since it is still a work in progress.
+        I didn't use any images so I didn't need to add any alt tags, honestly my biggest concern was the accessibility issues in a table, which is what I used for the chessboard. Tables frequently have accessiblity issues due to their nature and form. Visually, they can display informatino cohesively, but outside of that the code displays in a detremental way for accessiblity. Hopefully I made the chessboard a little more accessible through my previously mentioned changes, as that was certianly my biggest concern.
+      <br></p>
+    </div>
+
+  </body>
+</html>

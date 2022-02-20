@@ -1,0 +1,27 @@
+.hover-button {
+  border-radius: 25px;
+  padding: 16px;
+  border: none;
+  transition: box-shadow 0.6s ease-in-out;
+}
+
+.hover-button:hover {
+  box-shadow: 0px 1px 3px 1px black;
+}
+
+.hidden-thing {
+  background-color: transparent;
+  color: transparent;
+  height: 0px;
+  transition: all .25s ease-in-out;
+}
+
+h1, p {
+  margin: 0;
+}
+
+.fancy-header:hover .hidden-thing {
+  height: 20px;
+  color: white;
+  background-color: black;
+}

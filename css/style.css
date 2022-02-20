@@ -1,0 +1,73 @@
+/* colors:
+#ddd8b8
+#b3cbb9
+#84a9c0
+#6a66a3
+#542e71
+ */
+
+body {
+  background-color: white;
+  color: #542e71;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  background-color: white;
+  color: #542e71;
+}
+
+p, ul, ol {
+  background-color: white;
+  color: #6a66a3;
+}
+
+hr {
+  background-color: #6a66a3;
+  color: white;
+  height: 5px;
+  border-radius: 7px;
+}
+
+.boxed{
+  border: 5px solid #6a66a3;
+  padding-left: 10px;
+  border-radius: 7px;
+}
+
+a {
+  color: #b3cbb9;
+  transition: text-shadow 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #b3cbb9;
+  text-shadow: 3px 3px 3px;
+}
+
+a:visited {
+  color: #84a9c0;
+}
+
+.button {
+  background-color: #b3cbb9;
+  color: white;
+  border-radius: 15px;
+  padding: 15px;
+  border: none;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #84a9c0;
+  box-shadow: 3px 3px 3px 0px #6a66a3;
+}
+
+.button:focus {
+  background-color: #6a66a3;
+  box-shadow: inset 3px 3px 5px 1px #542e71;
+}
+
+.button:hover:focus {
+  box-shadow: 3px 3px 3px 0px #542e71;
+}

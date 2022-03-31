@@ -1,0 +1,54 @@
+div {
+  /*transition: <property> <duration> <timing-function> <delay>*/
+}
+
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  50% {
+    margin-left: 25%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.delay {
+  font-size: 14px;
+  transition-property: font-size;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+  transition-delay: 0.25s;
+}
+
+.delay:hover {
+  font-size: 36px;
+}
+
+.box {
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #0000FF;
+  /* transition: width 2s, height 2s, background-color 2s, transform 2s; */
+  transition: all 2s;
+}
+
+.box:hover {
+  background-color: #FFCCCC;
+  width: 200px;
+  height: 200px;
+  transform: rotate(180deg);
+}

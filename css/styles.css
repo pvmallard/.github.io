@@ -100,20 +100,20 @@
  }
 
  /* regular button */
- .button {
+ button {
    background-color: #542e71;
    color: white;
    border-radius: 15px;
    padding: 15px;
    border: none;
-   transition: box-shadow 0.2s ease-in-out;
+   transition: box-shadow 1000ms ease-in-out;
    margin: 4px;
  }
- .button:focus {
+ /* button:focus {
    background-color: #6a66a3;
    color: white;
    box-shadow: inset 3px 3px 5px 1px #542e71;
- }
+ } */
 
 
 /* desktop screen */

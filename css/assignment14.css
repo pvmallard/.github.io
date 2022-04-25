@@ -1,0 +1,47 @@
+/* || general styles */
+
+/* html {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  width: 800px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  font-family: 'Ubuntu', sans-serif;
+  color: #542e71;
+} */
+
+/* header styles */
+
+/* h1 {
+  font-size: 4rem;
+  text-align: center;
+} */
+
+header p, header3 p{
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #542e71;
+}
+
+/* section styles */
+
+section article, section2 article, section3 article{
+  width: 33%;
+  float: left;
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: -5px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+h3 {
+  margin: 10px;
+}

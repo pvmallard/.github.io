@@ -21,7 +21,7 @@ h1, h2 {
   text-align: center;
 } */
 
-header p, header3 p{
+header p, header3 p, header4 p{
   font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
@@ -30,7 +30,7 @@ header p, header3 p{
 
 /* section styles */
 
-section article, section2 article, section3 article{
+section article, section2 article, section3 article, section5 article{
   width: 33%;
   float: left;
 }

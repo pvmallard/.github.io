@@ -96,83 +96,77 @@ function populateEmployees(obj) {
     //myArticle.appendChild(myList);
 
     section.appendChild(myArticle);
-    }
   }
+}
 
-  function populateEmployees2(obj) {
-    const section = document.querySelector('section2');
-    const employees = obj['employees'];
-    //let myArticle = document.createElement('article');
+function populateEmployees2(obj) {
+  const section = document.querySelector('section2');
+  const employees = obj['employees'];
+  //let myArticle = document.createElement('article');
 
-    for (const employee of employees) {
-      const myArticle = document.createElement('article');
-      const myH2 = document.createElement('h2');
-      const myPara1 = document.createElement('p');
-      const myPara2 = document.createElement('p');
-      const myPara3 = document.createElement('p');
-      const myPara4 = document.createElement('p');
-      const myPara5 = document.createElement('p');
-      //const myList = document.createElement('ul');
+  for (const employee of employees) {
+    const myArticle = document.createElement('article');
+    const myH2 = document.createElement('h2');
+    const myPara1 = document.createElement('p');
+    const myPara2 = document.createElement('p');
+    const myPara3 = document.createElement('p');
+    const myPara4 = document.createElement('p');
+    const myPara5 = document.createElement('p');
+    //const myList = document.createElement('ul');
 
-      myH2.textContent = employee.name;
-      myPara1.textContent = `First Name: ${employee.firstName}`;
-      myPara2.textContent = `Department: ${employee.department}`;
-      myPara3.textContent = `Designation: ${employee.designation}`;
-      myPara4.textContent = `Salary: ${employee.salary}`;
-      myPara5.textContent = `Raise Eligible: ${employee.raiseEligible}`;
+    myH2.textContent = employee.name;
+    myPara1.textContent = `First Name: ${employee.firstName}`;
+    myPara2.textContent = `Department: ${employee.department}`;
+    myPara3.textContent = `Designation: ${employee.designation}`;
+    myPara4.textContent = `Salary: ${employee.salary}`;
+    myPara5.textContent = `Raise Eligible: ${employee.raiseEligible}`;
 
-      myArticle.appendChild(myH2);
-      myArticle.appendChild(myPara1);
-      myArticle.appendChild(myPara2);
-      myArticle.appendChild(myPara3);
-      myArticle.appendChild(myPara4);
-      myArticle.appendChild(myPara5);
-      //myArticle.appendChild(myList);
+    myArticle.appendChild(myH2);
+    myArticle.appendChild(myPara1);
+    myArticle.appendChild(myPara2);
+    myArticle.appendChild(myPara3);
+    myArticle.appendChild(myPara4);
+    myArticle.appendChild(myPara5);
+    //myArticle.appendChild(myList);
 
-      section.appendChild(myArticle);
-      }
-    }
+    section.appendChild(myArticle);
+  }
+}
 
-    function populateEmployees3(obj) {
-      const section = document.querySelector('section3');
-      const employees = obj['employees'];
-      //let myArticle = document.createElement('article');
+function populateEmployees3(obj) {
+  const section = document.querySelector('section3');
+  const employees = obj['employees'];
+  //let myArticle = document.createElement('article');
 
-      for (const employee of employees) {
-        const myArticle = document.createElement('article');
-        const myH2 = document.createElement('h2');
-        const myPara1 = document.createElement('p');
-        const myPara2 = document.createElement('p');
-        const myPara3 = document.createElement('p');
-        const myPara4 = document.createElement('p');
-        const myPara5 = document.createElement('p');
-        //const myList = document.createElement('ul');
+  for (const employee of employees) {
+    const myArticle = document.createElement('article');
+    const myH2 = document.createElement('h2');
+    const myPara1 = document.createElement('p');
+    const myPara2 = document.createElement('p');
+    const myPara3 = document.createElement('p');
+    const myPara4 = document.createElement('p');
+    const myPara5 = document.createElement('p');
+    //const myList = document.createElement('ul');
 
-        myH2.textContent = employee.name;
-        myPara1.textContent = `First Name: ${employee.firstName}`;
-        myPara2.textContent = `Department: ${employee.department}`;
-        myPara3.textContent = `Designation: ${employee.designation}`;
-        myPara4.textContent = `Salary: ${employee.salary}`;
-        myPara5.textContent = `Raise Eligible: ${employee.raiseEligible}`;
+    myH2.textContent = employee.name;
+    myPara1.textContent = `First Name: ${employee.firstName}`;
+    myPara2.textContent = `Department: ${employee.department}`;
+    myPara3.textContent = `Designation: ${employee.designation}`;
+    myPara4.textContent = `Salary: ${employee.salary}`;
+    myPara5.textContent = `Raise Eligible: ${employee.raiseEligible}`;
 
-        myArticle.appendChild(myH2);
-        myArticle.appendChild(myPara1);
-        myArticle.appendChild(myPara2);
-        myArticle.appendChild(myPara3);
-        myArticle.appendChild(myPara4);
-        myArticle.appendChild(myPara5);
-        //myArticle.appendChild(myList);
+    myArticle.appendChild(myH2);
+    myArticle.appendChild(myPara1);
+    myArticle.appendChild(myPara2);
+    myArticle.appendChild(myPara3);
+    myArticle.appendChild(myPara4);
+    myArticle.appendChild(myPara5);
+    //myArticle.appendChild(myList);
 
-        section.appendChild(myArticle);
-        }
-      }
+    section.appendChild(myArticle);
+  }
+}
 
-populateEmployees(company);
-
-populateHeader(company);
-populateEmployees2(company);
-
-// Problem 3
 function addEmployee(obj, name, dept, designa, sal, raise) {
   let employee = {
     "firstName": name,
@@ -184,7 +178,37 @@ function addEmployee(obj, name, dept, designa, sal, raise) {
 
   obj['employees'].push(employee); // the push() method adds a value to an object/array.
 }
-addEmployee(company, "Anna", "Tech", "Executive", 25600, false);
 
+function populateScript4(obj) {
+  const header = document.querySelector('script4');
+  const myH1 = document.createElement('h1');
+  const employees = obj['employees'];
+
+  myH1.textContent = obj['company'];
+  console.log(myH1);
+  header.appendChild(myH1);
+
+  let total = 0;
+  for (const employee of employees) {
+    total = total + employee.salary;
+  }
+
+  const myPara = document.createElement('p');
+  myPara.textContent = `Total Salary for all Employees: ${total}`;
+
+  header.appendChild(myPara);
+}
+// problem 1
+populateEmployees(company);
+
+// problem 2
+populateHeader(company);
+populateEmployees2(company);
+
+// problem 3
+addEmployee(company, "Anna", "Tech", "Executive", 25600, false);
 populateHeader3(company);
 populateEmployees3(company);
+
+// problem 4
+populateScript4(company);

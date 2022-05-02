@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>gallery page</title>
+
+    <script defer src="./js/gallery.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="./css/gallery.css" type="text/css">
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu&subset=cyrillic,latin' rel='stylesheet' type='text/css' />
+  </head>
+  <body>
+    <div class="whole-screen">
+      <nav>
+        <div class="top">
+          <div class="me">
+            <h1>mallory prescott</h1>
+          </div>
+          <div class="frog">
+            <img src="./img/frog.png">
+          </div>
+        </div>
+          <!-- <img src="./img/frog.png"> -->
+        <div class="top-divide">
+          <hr>
+        </div>
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="projects.html">projects</a>
+        <a class="current" href="gallery.html">gallery</a>
+        <a href="contact.html">contact</a>
+      </nav>
+
+      <div class="lead-content">
+        <h3>work gallery:</h3>
+
+        <div class="galleries">
+
+          <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="./img/flr1.jpg">
+              <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="./img/flr2.jpg">
+              <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="./img/flr3.jpg">
+              <div class="text">Caption Three</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+
+        </div>
+
+        <h3><br>info:</h3>
+      </div>
+
+      <div class="content">
+        <div class="">
+          <p>curious about the works above? check out my <a href="projects.html">projects page</a> for a smidgen more info on my works and projects.</p>
+        </div>
+      </div>
+      <div class="smol"> <p>Icons made by <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a> <p> </div>
+    </div>
+  </body>
+</html>

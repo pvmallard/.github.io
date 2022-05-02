@@ -218,6 +218,40 @@ function populateEmployees5(obj) {
   }
 }
 
+function populateEmployees6(obj) {
+  const section = document.querySelector('section6');
+  const employees = obj['employees'];
+  //let myArticle = document.createElement('article');
+
+  for (const employee of employees) {
+    const myArticle = document.createElement('article');
+    const myH2 = document.createElement('h2');
+    const myPara1 = document.createElement('p');
+    const myPara2 = document.createElement('p');
+    const myPara3 = document.createElement('p');
+    const myPara4 = document.createElement('p');
+    const myPara5 = document.createElement('p');
+    //const myList = document.createElement('ul');
+
+    myH2.textContent = employee.name;
+    myPara1.textContent = `First Name: ${employee.firstName}`;
+    myPara2.textContent = `Department: ${employee.department}`;
+    myPara3.textContent = `Designation: ${employee.designation}`;
+    myPara4.textContent = `Salary: ${employee.salary}`;
+    myPara5.textContent = `Raise Eligible: ${employee.raiseEligible}`;
+
+    myArticle.appendChild(myH2);
+    myArticle.appendChild(myPara1);
+    myArticle.appendChild(myPara2);
+    myArticle.appendChild(myPara3);
+    myArticle.appendChild(myPara4);
+    myArticle.appendChild(myPara5);
+    //myArticle.appendChild(myList);
+
+    section.appendChild(myArticle);
+  }
+}
+
 function addEmployee(obj, name, dept, designa, sal, raise) {
   let employee = {
     "firstName": name,
@@ -261,6 +295,17 @@ function giveRaise(obj) {
   }
 }
 
+function addItemtoArray(obj) {
+  const employees = obj['employees'];
+  for (const employee of employees) {
+    if(employee.raiseEligible == true)
+    {
+      employee.salary = employee.salary * 1.1;
+      employee.raiseEligible = false;
+    }
+  }
+}
+
 // problem 1
 populateEmployees(company);
 
@@ -280,3 +325,7 @@ populateScript4(company);
 // problem 5
 giveRaise(company);
 populateEmployees5(company);
+
+// problem 6
+addItemtoArray(company);
+populateEmployees6(company);

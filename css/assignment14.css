@@ -30,7 +30,7 @@ header p, header3 p, header4 p{
 
 /* section styles */
 
-section article, section2 article, section3 article, section5 article{
+section article, section2 article, section3 article, section5 article, section6 article{
   width: 33%;
   float: left;
 }

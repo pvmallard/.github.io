@@ -181,7 +181,8 @@
 
   .galleries{
     display: inline grid;
-    grid-column: 1fr 1fr 1fr;
+    grid-column: 1fr 1fr;
+    grid-column-gap: 8px;
   }
 
   .content{
